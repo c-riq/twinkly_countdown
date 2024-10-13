@@ -20,6 +20,7 @@ cc = ControlInterface(iplst[0])
 cc.set_mode("rt")
 
 def place_text(scene, txt, size1=0.87, speed=2, line_thickness=0.26):
+    # Adapted from https://github.com/Anders-Holst/xled_plus/blob/master/xled_plus/shapes.py RunningText.place_text
     bounds = scene.get_scene_bounds()
     # Size is relative the total height of leds, convert to relative radius
     size = size1 * abs((bounds[1][1] - bounds[1][0]))

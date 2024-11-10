@@ -51,6 +51,7 @@ for i in range(0, 10000):
     scene.shapes = []
     t = int(time.time())
     t = int(t) - 729414060
+    t = t + 10 # due to leap seconds between 1993 and now not captured in unix time
     #t = int(t) - 729414060 + 604800 + (3600 * 18) # 1 week
     #t = int(1e9) - 5 + i
     t = str(t)
